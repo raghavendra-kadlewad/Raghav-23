@@ -1,0 +1,59 @@
+Actively Exploited Vulnerabilities in Zabbix Servers
+    
+
+We have 2 new Vulnerabilities of Severe and Medium Impact:
+ 
+
+Vulnerabilities
+
+
+
+1. CVE-2022-23131(Could bypass the servers authentication configured with configured non-default SAML) - Severe Impact
+
+Proof of Concept exploit code effecting Zabbix front end is available publicly and is a straightforward process.
+
+And is Exploited Actively and can allow remote code execution with root privileges.
+
+2. CVE-2022-23134(Improper access control issue that can allow attackers to change the config file(the setup.php script) and gain access to the dashboard with elevated privileges. - Medium Impact
+
+
+
+Note:
+
+1. CVE-2022-23131 - To perform the attack the SAML authentication is required to be enabled and the actor has to know the username of Zabbix user(or use the guest account which is disabled by default)
+
+
+
+Fix: (Reference: https://support.zabbix.com/browse/ZBX-20350)
+
+We would need to Patch Zabbix Servers.
+
+Zabbix Maintainers have released updates versions which address both the vulnerabilities. Recommended to install in context to the two vulnerabilities.
+
+Affected versions: 5.4.0 -5.4.8 and 6.0.0alpha1
+
+Fixed in:
+
+5.4.9rc2
+
+6.0.0beta2 (master)
+
+
+
+Due Date: March 8 by CISA.
+
+
+
+References/Resources:
+
+NIST: https://nvd.nist.gov/vuln/detail/CVE-2022-23131
+
+NIST: https://nvd.nist.gov/vuln/detail/CVE-2022-23134
+
+Blogs:https://www.bleepingcomputer.com/news/security/cisa-warns-of-actively-exploited-vulnerabilities-in-zabbix-servers/amp/
+
+Resource: https://github.com/zabbix/zabbix
+
+Report of release:https://blog.sonarsource.com/zabbix-case-study-of-unsafe-session-storage
+
+Exploitation - https://www.youtube.com/watch?v=5dci1i6Fq3M
