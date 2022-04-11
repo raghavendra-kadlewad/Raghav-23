@@ -1,8 +1,7 @@
 - 👋 Hi, I’m Raghavendra S Kadlewad - @Raghav-23 
-This repo is in the making and you could see my some more works here in sometime. 
-- 👀 I’m interested in CyberSecurity and looking for challenging and exciting career in CyberSecurity for full pledged and focused work.
+This repo is in the making and you could see my some more works here in sometime.
 - 🌱 I’m currently learning SOC, Security+ and practicing InfoSec hands on.
-- 💞️ I’m looking for work in CyberSecurity.
+- 💞️ I’m looking for work in CyberSecurity field as an engineer.
 
 - 📫 How to reach me - 
 https://www.linkedin.com/in/raghavendra-s-kadlewad/
