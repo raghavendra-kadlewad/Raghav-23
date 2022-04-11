@@ -1,0 +1,34 @@
+WORKPLAN
+1. We can change the configuration files under /etc/logrotate.d accordingly.
+
+I have found we have log files that can be rotated under /var/log/sa. And they are not currently under logrotate config.
+
+Config file:
+
+/var/log/sa/* {
+        rotate 7
+        daily
+        compress
+        delaycompress
+        missingok
+        notifempty
+        create 666 root root }
+
+
+This config file will run daily, create a maximum of 7 archives owned by root and root group with 666 permissions,
+compress all logs and exclude only yesterdays and empty log files.
+
+2. 
+Copying it into the logrotate directory and changing owner and permissions:
+# cp /var/log/sa /etc/logrotate.d/
+# chmod 644 /etc/logrotate.d/sa
+# chown root.root /etc/logrotate.d/sa
+
+3.
+Testing
+force logrotate to rotate all logs with -f option.
+# logrotate -f /etc/logrotate.conf/sa
+
+4.
+Results
+Visit again to /var/log/directory and confirm that the log file was rotated and new log file was created.
