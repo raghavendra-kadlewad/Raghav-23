@@ -1,0 +1,16 @@
+Spring4Shell/SpringShell
+
+
+A new zero day vulnerability in the spring framework was discovered on Wednesday. Spring Framework is the most popular front-end framework for java. Spring Framework RCE Vulnerability or Spring4Shell is tracked as CVE-2022-22965.  
+
+Spring4shell is currently is being actively exploited in the attacks however there are specific category or requirements to be met for the spring app to be vulnerable or to be exploited.
+
+And currently there are no patches yet(Not sure).
+
+Vendor has given spring framework version which are vulnerable and can be upgraded to what versions to mitigate.
+
+Resource:https://tanzu.vmware.com/security/cve-2022-22965
+
+Resource to keep an eye for updates:https://spring.io/blog/2022/03/31/spring-framework-rce-early-announcement
+
+References: https://tanzu.vmware.com/security/cve-2022-22963
