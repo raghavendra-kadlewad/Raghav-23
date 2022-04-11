@@ -1,0 +1,16 @@
+# Else you can use ansible to find the version from the metadata.json.  Finding the version from metadata.json is more correct.
+
+#To do this with Ansible:
+#get_ets_baes_os_version_from_host.yml
+---
+- hosts: all
+  tasks:
+    - name: cat metadata
+      become: true
+      ansible.builtin.command: "cat /var/chef/cache/cookbooks/ets_base_os/metadata.json | grep 'version'"
+      register: version_out
+    - name: print version
+      debug:
+        var: version_out
+
+`ansible-playbook -i server_list get_ets_baes_os_version_from_host.yml --ask-sudo-pass
