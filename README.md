@@ -1,5 +1,5 @@
-- 👋 Hi, I’m Raghavendra S Kadlewad - @Raghav-23 
-This repo is in the making and you could see my some more works here in sometime.
+- 👋 Hi, I’m Raghavendra S Kadlewad 
+- @Raghav-23 This repo is in the making and you could see my some more works here in sometime.
 - 🌱 I’m currently learning SOC, Security+ and practicing InfoSec hands on.
 - 💞️ I’m looking for work in CyberSecurity field as an engineer.
 
