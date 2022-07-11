@@ -1,0 +1,43 @@
+WORKPLAN
+
+1. Take a snapshot of the node
+
+2. Login into the node
+
+3. Run the following commands 
+Manually check the kexalgorithms by running and make a note.
+sudo sshd -T | grep kex
+
+Check if KexAlgorithms can be fetched form sshd_config
+grep KexAlgorithms /etc/ssh/sshd_config
+ 
+Manually edit the file to remove weak Algorithms
+if [[ $(grep ^KexAlgorithms /etc/ssh/sshd_config >/dev/null 2>&1 ; echo $?) -eq 0  ]] ; then
+> sed -i 's/^KexAlgorithms.*/KexAlgorithms diffie-hellman-group-exchange-sha256,diffie-hellman-group14-sha1/g' /etc/ssh/sshd_config
+> else
+> sed -i '/^Ciphers.*/a KexAlgorithms diffie-hellman-group-exchange-sha256,diffie-hellman-group14-sha1' /etc/ssh/sshd_config
+> fi
+
+Restart sshd service to make the chnages effective.
+service sshd restart
+
+Check for sshd status
+service sshd status
+
+Check for Algorithms
+grep KexAlgorithms /etc/ssh/sshd_config
+
+Verify
+grep KexAlgorithms /etc/ssh/sshd_config
+Weak Algorithms published by tenable should be not be visible.
+
+CRITERIA FOR SUCCESS
+1. Weak Algorithms will be removed from ssh2 server. And the following algorithms should not be seen KexAlgorithms list.
+diffie-hellman-group-exchange-sha1
+diffie-hellman-group1-sha1 
+
+Or any of these algorithms should not be seen: https://www.tenable.com/plugins/nessus/153953
+
+RISKS
+1. low risk - this will be tested in Staging first.
+2. OpenSSH will limit the connections to stonger algorithms and connections made with weaker algorithms will not be compatible anymore.
