@@ -1,0 +1,6 @@
+index=<app name> sourcetype=aws:cloudfront:accesslogs
+x_host_header=*<search what you need >* earliest=-4h
+| search TLS 
+| search *error*
+| search ssl_protocol=TLSv1.1 
+| stats count by ssl_protocol | where count > 10
