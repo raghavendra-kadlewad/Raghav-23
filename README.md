@@ -6,7 +6,7 @@
 - 📫 How to reach me - 
 https://www.linkedin.com/in/raghavendra-s-kadlewad/
 raghavendraskvb@gmail.com
-+91 9632876996
+
 
 <!---
 Raghav-23/Raghav-23 is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
