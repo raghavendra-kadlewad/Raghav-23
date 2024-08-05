@@ -1,0 +1,24 @@
+# It containes code for print, new line, string manipulation, print function, input function, variables, length function #
+
+# Write your code below this line 👇
+
+"""print("hello world")
+
+print("hello world\nHello world\n")
+
+
+print("hello" + "Angela")
+
+print("hello" + " " + "Angela")"""
+
+#pyhton input function
+
+# print("hello " + input("what is your name?")+"!")
+
+#python Variabls
+
+name = "Raghav"
+print(name)
+name = input("what is your name")
+length = len(name)
+print(length)
