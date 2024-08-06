@@ -1,0 +1,62 @@
+#Data Types
+
+# print(len(123456)) This will give error int has no len()
+
+#to pull each charater in a string
+# print("Strings"[1])
+
+#sub scripting
+# print("hello"[-1])
+
+
+#strings
+# print("123" + "345") #concatenation
+
+
+#4 lines of code to printing the type of data types
+# print(type("hello"))
+# print(type(123))
+# print(type(3.14))
+# print(type(True))
+
+
+#type conversions
+# print(int("123")+int("345")) #output = 468
+
+
+# print("The number of characters in your name is " + str(len(input("What is your name? "))))
+
+
+#default devision value is float
+# print(123/123)
+# print(123//123)
+
+# print(2**2)
+
+
+# print(3*3+3/3-3)
+# print(3*(3+3)/3-3)
+
+
+#print bmi
+# bmi =  (84/1.65**2)
+# print(round(bmi)) #round function 31
+# print(round(bmi,2)) #30.85
+
+
+#Assignmet operator
+
+score = 0
+
+#when a user scores a point
+
+# score += 1
+# print(score)
+
+#F String
+
+# is_winning = True
+# score = 1
+# height = 1.63
+
+# print(f"your score is {score}, your height is {height}, you are winning is {is_winning}")
