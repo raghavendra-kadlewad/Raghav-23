@@ -1,0 +1,40 @@
+print('''              _)       .-.-.-.-.-.-.-.-.-.-.-.-.
+             (__)__        "I'm ready for my
+             ( /__\\__    closeup, Ms. Justine Triet."
+              \|/)|(_() .-.-.-.-.-.-.-.-.-.-.-.-.
+             |(_/_//     ,,_
+             \_||//     ;).))/)
+     ________|/)//)     ))\o_))
+    |[]___________/     /)_))-'
+ jro/ /                 \/ (
+     /                 .'.'.`.
+                       `-.__.-'
+                         (||
+                         Y\>>''')
+print("Welcome to the Ms. Justine Triet's office.")
+
+print("Your mission is to find the best films for Ms. Justine Triet.")
+
+first_choice = input("Choose one. Godard or Truffaut?")
+
+if first_choice == "Godard":
+  print("first level achieved")
+  second_choice = input("Bresson or Rohmer\n")
+
+  if second_choice == "Bresson":
+    print("Second level achieved")
+    third_choice = input(("Triet or Bong-Joon\n"))
+    if third_choice == "Triet":
+      print("She is not self obssessed, you are fired!\n")
+    else :
+      print("You are hired! Mission complete\n")
+  elif second_choice == "Rohmer":
+    print("Nope, you are fired!\n")
+  else:
+    print("wrong input")
+elif first_choice == "Truffaut":
+  print("You are fired!\n")
+
+
+else:
+  print("wrong input\n")

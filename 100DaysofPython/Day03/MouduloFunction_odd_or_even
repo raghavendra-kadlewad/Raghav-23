@@ -1,0 +1,8 @@
+#Modulo Operator
+
+number = int(input("enter a numeber")) #convert the number to int
+
+if number % 2 == 0:
+  print("this is an even number")
+else
+  print("this is an odd number")

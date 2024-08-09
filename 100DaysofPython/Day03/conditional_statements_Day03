@@ -1,0 +1,90 @@
+#conditional statment(if)
+
+
+print("hello, welcome to the rollercoaster!")
+height = int(input("what is your height in cm?"))
+
+if height >= 120:
+  print("you can ride the rollercoaster!")
+else:
+  print("sorry, you have to grow taller before you can ride.")
+
+###################################################### END ##########################################
+#Modulo Operator
+
+number = int(input("enter a numeber")) #convert the number to int
+
+if number % 2 == 0:
+  print("this is an even number")
+else
+  print("this is an odd number")
+
+#################################### END #########################################################
+#Nested if else
+
+
+print("hello, welcome to the rollercoaster!")
+height = int(input("what is your height in cm? "))
+age = int(input("what is your age? "))
+if height >= 120:
+  print("you can ride the rollercoaster!")
+  if age <= 18:
+    print("please pay $7.")
+  else:
+    print("please pay $12.")
+
+else:
+  print("sorry, you have to grow taller before you can ride.")
+
+################################################ END ################################################
+
+#elif
+
+#to keep it simple, if age<=12 =5, elif age<=18 =7, else age>18 =12
+print("hello, welcome to the rollercoaster!")
+height = int(input("what is your height in cm? "))
+age = int(input("what is your age? "))
+if height >= 120:
+  print("you can ride the rollercoaster!")
+  if age < 12:
+    print("please pay $5.")
+  elif age == 12 and age<18: #both or and 'and' works
+    print("please pay $7.")
+  else:
+    print("please pay $12.")
+
+else:
+  print("sorry, you have to grow taller before you can ride.")
+
+
+##################################################### END #####################################################
+
+#multiple ifs - Rollercoaster
+
+
+print("hello, welcome to the rollercoaster!")
+height = int(input("what is your height in cm? "))
+age = int(input("what is your age? "))
+bill = 0
+if height >= 120:
+  print("you can ride the rollercoaster!")
+  if age < 12:
+    bill = 5
+    print("child tickets are $5. ")
+  elif age == 12 and age<18: #both or and 'and' works
+    bill = 7
+    print("teen tickets are $7. ")
+  else:
+    bill = 12
+    print("adult tickets are $12. ")
+
+  want_photos = input("do you want your photos to be taken? it costs $3 Y or N. ")
+  if want_photos == "Y" or "y":
+    bill += 3
+  print(f"your final bill is ${bill}")
+else:
+  print("sorry, you have to grow taller before you can ride.")
+
+
+
+############################################## END ###############################################

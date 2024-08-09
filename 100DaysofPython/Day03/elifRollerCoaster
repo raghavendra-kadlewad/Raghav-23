@@ -1,0 +1,17 @@
+#elif
+
+#to keep it simple, if age<=12 =5, elif age<=18 =7, else age>18 =12
+print("hello, welcome to the rollercoaster!")
+height = int(input("what is your height in cm? "))
+age = int(input("what is your age? "))
+if height >= 120:
+  print("you can ride the rollercoaster!")
+  if age < 12:
+    print("please pay $5.")
+  elif age == 12 and age<18: #both or and 'and' works
+    print("please pay $7.")
+  else:
+    print("please pay $12.")
+
+else:
+  print("sorry, you have to grow taller before you can ride.")
