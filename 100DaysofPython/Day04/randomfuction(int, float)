@@ -1,0 +1,33 @@
+import random
+
+#random integer
+print("let's play dice!")
+dice = random.randint(1,10)
+print(dice)
+
+###################
+
+#random float
+
+random_btw_0_to_1 = random.random() * 20
+print(random_btw_0_to_1)
+
+random_float = random.uniform(1,10)
+print(random_float)
+
+########################################
+
+
+
+print out heads or tails
+
+
+random_bwn_0_1 = random.randint(0,1)
+# print(random_bwn_0_1)
+
+if random_bwn_0_1 == 0:
+  print("heads")
+else:
+  print("tails")
+
+################ END ###################

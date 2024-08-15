@@ -1,0 +1,10 @@
+#print out heads or tails
+
+
+random_bwn_0_1 = random.randint(0,1)
+# print(random_bwn_0_1)
+
+if random_bwn_0_1 == 0:
+  print("heads")
+else:
+  print("tails")
